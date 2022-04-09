@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+  body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #FFFCFF;
+  }
+  span {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  #header {     
+    padding: 10px;
+    color: #d36c6c;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+  #header span:nth-child(2){
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'MuseoModerno', cursive;
+    cursor:default;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(217,155,22,1) 100%);
+    
+  }
+  #header span {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  }
+  
+  #wrapper {
+    width: 770px;
+  }
+  #nameOfDays {
+    width: 100%;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+    font-family: 'MuseoModerno', cursive;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #nameOfDays div {
+    width: 100px;
+    padding: 10px;
+  }
+  #dispCalender {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .dayField {
+    width: 100px;
+    padding: 10px;
+    height: 60px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    margin: 5px;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'MuseoModerno', cursive;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .dayField:hover {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;  
+  }
+  #currentDay {
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+  }
+  .event {
+    font-size: 10px;
+    padding: 0 3px 0 3px;
+    background-color: whitesmoke;
+    color: crimson;
+    border-radius: 5px;
+    max-height: 55px;
+    width:fit-content;
+    overflow: hidden;
+  }
+  .blankField {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+    opacity: 0;
+  }
+  #eventDialog, #deleteDialog {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #titleOfEvent {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #titleOfEvent.inpValidation { 
+    background-color: crimson;
+    opacity: .4;
+  }
+  #save , 
+  #cancel, 
+  #close, 
+  #delete{
+  background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
+
+
+  #save,
+  #close,
+  #cancel,
+  #delete{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+   }
+
+   #save:hover,
+   #cancel:hover,
+   #close:hover,
+   #delete:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+   }
+  #eventDetails {
+    font-size: 24px;
+    color:white;
+  }
+  #dialogBackScreen {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+  }
+  #eventManage{
+    padding: 5px;
+    color: #d36c6c;
+    font-size: 12px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+
+  
+  
+
+
+   
+
+  
+
+

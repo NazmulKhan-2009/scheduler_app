@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender with Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="wrapper">
+        <header id="header">        
+            <span id="previousMonth">&#x21A9</span>
+            <span id="nameOfMonth"></span>
+            <span id="nextMonth">&#x21AA</span>
+        </header>
+        <mark id="nameOfDays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </mark>
+        <main id="dispCalender"></main>
+    </section>
+  
+    <div id="eventDialog">      
+      <label for="titleOfEvent">Event Details:</label>
+      <textarea  id="titleOfEvent" placeholder="Input your event details" ></textarea>
+      <div id="eventManage">
+        <span id="save">Save</span>
+        <span id="cancel">Cancel</span>
+      </div>       
+    </div>
+
+    <div id="deleteDialog">
+      <p id="eventDetails"></p>
+      <div id="eventManage">
+        <span id="delete">Delete</span>
+        <span id="close">Close</span>
+      </div>
+    </div>
+  
+    <div id="dialogBackScreen"></div>
+  
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
